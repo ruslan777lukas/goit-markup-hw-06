@@ -26,10 +26,30 @@ button {
 }
 
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .overlay {
@@ -225,14 +245,25 @@ button {
 }
 
 .adress-norm {
+  display: none;
   font-style: normal;
   margin-left: 332px;
 }
-
-.navigation {
-  display: flex;
-  align-items: center;
+@media (min-width: 768px) and (max-width: 1157px) {
+  .adress-norm {
+    display: block;
+    font-style: normal;
+    margin-left: 121px;
+  }
 }
+@media (min-width: 1158px) {
+  .adress-norm {
+    display: block;
+    font-style: normal;
+    margin-left: 332px;
+  }
+}
+
 .navigation-mailto {
   display: flex;
   gap: 40px;
@@ -359,10 +390,19 @@ ul {
 }
 
 .nav {
-  display: flex;
-  gap: 40px;
+  display: none;
 }
-
+@media (min-width: 768px) and (max-width: 1157px) {
+  .nav {
+    display: flex;
+  }
+}
+@media (min-width: 1158px) {
+  .nav {
+    display: flex;
+    gap: 40px;
+  }
+}
 .nav-studio {
   position: relative;
   padding: 24px 0;
