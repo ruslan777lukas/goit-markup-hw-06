@@ -872,15 +872,29 @@ ul {
   top: 50%;
   left: 50%;
   border-radius: 4px;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   position: absolute;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) and (max-width: 1157px) {
+  .modal-window {
+    min-height: 584px;
+    width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
+}
+@media (min-width: 1158px) {
+  .modal-window {
+    min-height: 584px;
+    width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
 }
 
 .modal-text {
@@ -950,12 +964,22 @@ ul {
 .modal-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  width: 360px;
+  width: 256px;
   height: 40px;
   padding-left: 38px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: transparent;
+}
+@media (min-width: 768px) and (max-width: 1157px) {
+  .modal-input {
+    width: 360px;
+  }
+}
+@media (min-width: 1158px) {
+  .modal-input {
+    width: 360px;
+  }
 }
 .modal-input:focus {
   border-color: #4d5ae5;
@@ -1024,13 +1048,23 @@ ul {
   resize: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  width: 360px;
+  width: 256px;
   height: 120px;
   background-color: transparent;
-  margin-top: 4px;
+  /* margin-top: 4px; */
   padding: 8px 16px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) and (max-width: 1157px) {
+  .modal-textarea {
+    width: 360px;
+  }
+}
+@media (min-width: 1158px) {
+  .modal-textarea {
+    width: 360px;
+  }
 }
 .modal-textarea:focus {
   border-color: #4d5ae5;
@@ -1058,16 +1092,22 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  /* display: flex; */
-  align-items: center;
+}
+@media (max-width: 767px) {
+  .modal-label-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
 }
 .span-checkbox {
+  flex-shrink: 0;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  display: inline-flex;
   display: inline-flex;
   align-items: center;
   justify-content: center;
