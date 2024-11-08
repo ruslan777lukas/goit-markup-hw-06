@@ -393,11 +393,36 @@
             </li>
             <li class="portfolio-li">
               <div class="photo-overlay">
-                <img
+                <picture
+                  ><source
+                    srcset="
+                      ./images/medit-app.jpg    1x,
+                      ./images/medit-app-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/medit-app-tab-1x.jpg 1x,
+                      ./images/medit-app-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/medit-app-mob-1x.jpg 1x,
+                      ./images/medit-app-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
                   src="./images/medit-app.jpg"
                   height="300"
+                  width="360px"
                   alt="meditation-app"
-                />
+                  />
+                </picture>
+                
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
