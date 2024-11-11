@@ -446,7 +446,7 @@ ul {
 .header-one {
   margin: 0 auto;
   max-width: 496px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.02em;
@@ -456,14 +456,14 @@ ul {
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .header-one {
-    padding-bottom: 36px;
+    margin-bottom: 36px;
     font-size: 56px;
     line-height: 1.07;
   }
 }
 @media screen and (min-width: 1158px) {
   .header-one {
-    padding-bottom: 48px;
+    margin-bottom: 48px;
     font-size: 56px;
     line-height: 1.07;
   }
@@ -977,12 +977,7 @@ ul {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: transparent;
 }
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-  .modal-input {
-    width: 360px;
-  }
-}
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 768px) {
   .modal-input {
     width: 360px;
   }
@@ -1061,12 +1056,7 @@ ul {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-  .modal-textarea {
-    width: 360px;
-  }
-}
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 768px) {
   .modal-textarea {
     width: 360px;
   }
